@@ -1,7 +1,9 @@
-xpackage snakeAndLadder;
+package snakeAndLadder;
 
 public class SnakeAndLadder {
 
+	static int NUMBER_OF_PLAYER=1;
+	static int INITIAL_POSITION=0;
 	
 	public static void main(String[] args) {
 		
