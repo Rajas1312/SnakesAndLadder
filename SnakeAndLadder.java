@@ -6,6 +6,7 @@ public class SnakeAndLadder {
 	static int INITIAL_POSITION=0;
 	static int WINNING_POSITION=100;
 	int position=0;
+	int numberOfRolls=0;
 	
 	public static int getRoll() {
 		
@@ -18,6 +19,8 @@ public  void checkOption() {
 		
 		System.out.println("Selecting the option of play randomly");
 		while(this.position!=WINNING_POSITION) {
+			
+		this.numberOfRolls++;	
 		int option=(int)(Math.random()*10%3+1);
 		switch(option) {
 		
@@ -58,6 +61,7 @@ public  void checkOption() {
 			}
 			
 		}
+		System.out.println("Number of dice rolls is " +this.numberOfRolls);
 			
 	}
 	
