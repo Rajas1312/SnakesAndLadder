@@ -35,7 +35,7 @@ public  void checkOption() {
 			System.out.println("ladder encountered");
 			int ladder=INITIAL_POSITION+getRoll();
 			this.position=this.position+ladder;
-			if(this.position>=0 ) {
+			if(this.position>=0 && this.position<=100) {
 				System.out.println(this.position);
 			}
 			else {
